@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nikhil Siwan Portfolio</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav.svg">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Nikhil Siwan Developer Portfolio">
+  <meta property="og:title" content="Nikhil Siwan Portfolio">
+  <meta property="og:type" content="Article">
+  <meta property="og:url" content="https://nikhilsiwan.vercel.app">
+  <meta property="og:description" content="Nikhil Siwan Developer Portfolio">
+  <meta property="og:site_name" content="Nikhil Siwan Portfolio">
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }</script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="main">
+      <div class="header js-header" id="header">
+        <div class="header__center center"><a class="header__logo" href="index.html"><img class="header__pic"
+              src="img/logo.svg" alt="" /></a>
+          <div class="header__social header__social_main">
+            <a class="header__link" href="https://www.linkedin.com/in/nikhilsiwan/">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a class="header__link" href="https://www.instagram.com/_thisisnikkk_/">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+          </div>
+          <button class="header__burger js-header-burger"></button>
+        </div>
+        <div class="header__wrapper js-header-wrapper">
+          <div class="header__preview"><a class="header__logo" href="index.html"><img class="header__pic"
+                src="img/logo-white.svg" alt="" /></a>
+            <div class="header__img"><img class="header__pic" src="img/bg-header.png" alt="" /></div>
+          </div>
+          <div class="header__center center">
+            <div class="header__contacts"><a class="header__line" href="mailto:hello@ui8.net">
+                <div class="header__icon"><svg class="icon icon-email">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg></div>
+                <div class="header__text">developer.nikk@gmail.com</div>
+              </a>
+              <div class="header__line">
+                <div class="header__icon"><svg class="icon icon-place">
+                    <use xlink:href="img/sprite.svg#icon-place"></use>
+                  </svg></div>
+                <div class="header__text">
+                  <p>Somewere in Hisar</p>
+                  <p>Hint - Haryana ✌️</p>
+                </div>
+              </div><a class="header__line" href="tel:+911234567890">
+                <div class="header__icon"><svg class="icon icon-phone">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg></div>
+                <div class="header__text">+91 8813060916 </div>
+              </a>
+            </div>
+            <nav class="header__nav">
+              <a class="header__item js-scroll" href="#about"><span>About</span></a>
+              <a class="header__item js-scroll" href="#work"><span>Work</span></a>
+              <a class="header__item js-scroll" href="#details"><span>Services</span></a>
+              <a class="header__item js-scroll" href="#portfolio"><span>Portfolio</span></a>
+              <a class="header__item js-scroll" href="#contact"><span>Contact</span></a>
+            </nav>
+            <div class="header__social header__social_inner">
+              <a class="header__link" href="https://www.linkedin.com/in/nikhilsiwan/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                  class="icon icon-linkedin">
+                  <path d="M19 0h-14c-2.76 0-5 
+             2.24-5 5v14c0 2.76 2.24 
+             5 5 5h14c2.76 0 5-2.24 
+             5-5v-14c0-2.76-2.24-5-5-5zm-11 
+             19h-3v-10h3v10zm-1.5-11.27c-.96 
+             0-1.73-.78-1.73-1.73s.78-1.73 
+             1.73-1.73 1.73.78 1.73 
+             1.73-.77 1.73-1.73 1.73zm13.5 
+             11.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 
+             0-2.16 1.46-2.16 2.96v5.7h-3v-10h2.88v1.36h.04c.4-.76 
+             1.37-1.55 2.82-1.55 3.01 
+             0 3.57 1.98 3.57 4.56v5.63z" />
+                </svg>
+                LinkedIn
+              </a>
+              <a class="header__link" href="https://www.instagram.com/_thisisnikkk_/">
+                <svg class="icon icon-instagram">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="about">
+        <div class="main__bg"><img class="main__pic" src="img/bg-main.jpg" alt=""></div>
+        <div class="main__center center" id="about">
+          <div class="main__wrap">
+            <div class="main__stage stage" data-aos="transform">Nikhil Siwan</div>
+            <h1 class="main__title title h1"><span data-aos="transform" data-aos-delay="150">Hello, my</span><span
+                data-aos="transform" data-aos-delay="300">name's Nikhil.</span><span data-aos="transform"
+                data-aos-delay="450">I'm a Software</span><span data-aos="transform"
+                data-aos-delay="600">Developer.</span></h1><a class="scroll js-scroll" href="#details"
+              data-aos="transform">
+              <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
+              <div class="scroll__text">Scroll down</div>
+            </a>
+          </div>
+        </div>
+        <div class="main__view" data-aos>
+          <div class="main__preview"><img class="main__pic" src="img/main-pic-6.png" alt=""></div>
+          <div class="main__preview"><img class="main__pic js-parallax" data-scale="2.5" data-orientation="up"
+              src="img/main-pic-1.png" alt=""></div>
+          <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="up"
+              src="img/main-pic-2.png" alt=""></div>
+          <div class="main__preview"><img class="main__pic" src="img/main-pic-3.png" alt=""></div>
+          <div class="main__preview"><img class="main__pic" src="img/main-pic-4.png" alt=""></div>
+          <div class="main__preview"><img class="main__pic js-parallax" data-scale="4.5" data-orientation="up"
+              src="img/main-pic-5.png" alt=""></div>
+          <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="down"
+              src="img/main-pic-7.png" alt=""></div>
+        </div>
+        <div class="main__figures">
+          <div class="main__figure" data-aos="animation-translate-y"><img class="main__pic js-parallax" data-scale="2.2"
+              data-orientation="down" src="img/figure-1.png" alt=""></div>
+          <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="200"><img
+              class="main__pic js-parallax" data-scale="2.2" data-orientation="up" src="img/figure-2.png" alt=""></div>
+          <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="400"><img class="main__pic"
+              src="img/figure-3.png" alt=""></div>
+        </div>
+    </div>
+    </section>
+    <section id="details">
+      <div class="details" id="details">
+        <div class="details__center center">
+          <div class="details__head" data-aos="animation-scale-y">
+            <div class="details__stage stage">What I Do</div>
+            <h3 class="details__info h3">I love turning ideas into <br>reliable and impactful applications.</h3>
+          </div>
+          <h2 class="details__title" data-aos="animation-scale-y">Think. Code. <br>Deploy. </h2>
+          <div class="details__btn" data-aos="animation-translate-y">
+            <a href="#contact" class="btn btn_purple js-scroll">
+              <span class="btn__text">Contact Me</span>
+              <svg class="icon icon-arrow-right">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="details__container">
+            <div class="details__slider owl-carousel js-slider-details">
+              <div class="details__item">
+                <div class="details__preview details__preview_cursor" data-aos="animation-scale">
+                  <div class="details__img"><img class="details__pic" src="img/fd.png" alt=""></div>
+                </div>
+                <h5 class="details__category h5" data-aos="animation-scale-y">Frontend <br>Development</h5>
+                <div class="details__text" data-aos="animation-scale-y">Building responsive and high-performance web
+                  applications with modern frameworks and clean code.</div>
+                <div class="details__btn" data-aos="animation-scale-x" data-aos-delay="150">
+                  <a href="#contact" class="js-scroll"><button class="btn btn_dark">Find out more</button></a>
+                </div>
+              </div>
+
+              <div class="details__item">
+                <div class="details__preview details__preview_hand" data-aos="animation-scale" data-aos-delay="300">
+                  <div class="details__img"><img class="details__pic" src="img/ui.png" alt=""></div>
+                </div>
+                <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="300">UI/UX <br>Development
+                </h5>
+                <div class="details__text" data-aos="animation-scale-y" data-aos-delay="300">Designing user-friendly
+                  interfaces and smooth experiences that make applications engaging.</div>
+                <div class="details__btn" data-aos="animation-scale-x" data-aos-delay="150">
+                  <a href="#contact" class="js-scroll"><button class="btn btn_dark">Find out more</button></a>
+                </div>
+              </div>
+
+              <div class="details__item">
+                <div class="details__preview details__preview_cursor" data-aos="animation-scale" data-aos-delay="150">
+                  <div class="details__img"><img class="details__pic" src="img/ad.png" alt=""></div>
+                </div>
+                <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="150">Android
+                  <br>Development
+                </h5>
+                <div class="details__text" data-aos="animation-scale-y" data-aos-delay="150">Creating modern,
+                  feature-rich
+                  Android apps with seamless performance and great user experience.</div>
+                <div class="details__btn" data-aos="animation-scale-x" data-aos-delay="150">
+                  <a href="#contact" class="js-scroll"><button class="btn btn_dark">Find out more</button></a>
+                </div>
+              </div>
+
+              <div class="details__item">
+                <div class="details__preview details__preview_hand">
+                  <div class="details__img"><img class="details__pic" src="img/bd.png" alt=""></div>
+                </div>
+                <h5 class="details__category h5">Backend <br>Development</h5>
+                <div class="details__text">Developing secure and scalable server-side applications, APIs, and database
+                  solutions.</div>
+                <div class="details__btn" data-aos="animation-scale-x" data-aos-delay="150">
+                  <a href="#contact" class="js-scroll"><button class="btn btn_dark">Find out more</button></a>
+                </div>
+              </div>
+
+              <div class="details__item">
+                <div class="details__preview details__preview_cursor">
+                  <div class="details__img"><img class="details__pic" src="img/ss.png" alt=""></div>
+                </div>
+                <h5 class="details__category h5">Scalable <br>Solutions</h5>
+                <div class="details__text">
+                  Integrating third-party APIs and services to enhance functionality, boost performance, and ensure
+                  seamless growth.
+                </div>
+                <div class="details__btn" data-aos="animation-scale-x" data-aos-delay="150">
+                  <a href="#contact" class="js-scroll"><button class="btn btn_dark">Find out more</button></a>
+                </div>
+              </div>
+
+              <div class="details__item">
+                <div class="details__preview details__preview_hand">
+                  <div class="details__img"><img class="details__pic" src="img/api.png" alt=""></div>
+                </div>
+                <h5 class="details__category h5">API <br>Integration</h5>
+                <div class="details__text">Integrating third-party APIs and services to extend application functionality
+                  and performance.</div>
+                <div class="details__btn" data-aos="animation-scale-x" data-aos-delay="150">
+                  <a href="#contact" class="js-scroll"><button class="btn btn_dark">Find out more</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details__figures">
+          <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="down"
+              src="img/figure-1.png" alt=""></div>
+          <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="up"
+              src="img/figure-2.png" alt=""></div>
+          <div class="details__figure"><img class="details__pic js-parallax" data-scale="1.2" data-orientation="up"
+              src="img/figure-3.png" alt=""></div>
+        </div>
+    </section>
+    <section id="work">
+      <div class="work">
+        <div class="work__circles"></div>
+        <div class="work__center center">
+          <div class="work__wrap">
+            <div class="work__stage stage stage_pink" data-aos="animation-scale-y">Who I Work With</div>
+            <h2 class="work__title title h1" data-aos="animation-scale-y" data-aos-delay="150">Currently working as a
+              Associate Developer in Mohali.</h2>
+            <div class="work__text" data-aos="animation-scale-y" data-aos-delay="300">I translate creative designs into
+              - clean, responsive code to build seamless and engaging user experiences.
+            </div>
+            <a class="scroll js-scroll" data-aos="animation-scale-y" href="#cases">
+              <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
+              <div class="scroll__text">Scroll down</div>
+            </a>
+          </div>
+        </div>
+        <div class="work__preview"><img class="work__pic js-parallax" data-scale="2" data-orientation="down"
+            src="img/work-cube.png" alt=""></div>
+        <div class="work__figures" data-aos>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up"
+              src="img/work-cube-1.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.5" data-orientation="up left"
+              src="img/work-cube-2.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up right"
+              src="img/work-cube-3.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic" src="img/work-cube-4.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.1" data-orientation="left"
+              src="img/work-cube-5.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="right"
+              src="img/work-cube-6.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="down"
+              src="img/work-cube-7.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="wrapper wrapper_gradient">
+        <div class="cases cases_main" id="cases">
+          <div class="cases__center center">
+            <div class="cases__stage stage" data-aos="animation-scale-y">Portfolio</div>
+            <h2 class="cases__title h1" data-aos="animation-scale-y" data-aos-delay="150">Look at My <br>Projects.</h2>
+            <div class="cases__list js-owl" data-items-mobile-portrait="1" data-items-mobile-album="1" data-autoheight>
+
+
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://prepai-live.vercel.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/prep.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">PrepAI</h4>
+                  <div class="cases__text">PrepAI is an AI-powered mock interview platform built with NEXT.js, Firebase,
+                    Shadcn, Tailwindcss, Vapi AI, and Gemini API. It offers realistic interview simulations,
+                    personalized feedback, and a sleek, responsive design to empower users in mastering their interview
+                    skills and achieving career success.</div>
+                </div>
+              </a>
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://tara-co.vercel.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/taraco.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">TaraCo</h4>
+                  <div class="cases__text">Designed and developed a modern, responsive website for Tara.Co, a chartered
+                    accountant agency focused on financial consulting and compliance. The site emphasizes clarity,
+                    trust, and professionalism.</div>
+                </div>
+              </a>
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://metagrowthlabs.vercel.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/meta.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">MetaGrowth Labs</h4>
+                  <div class="cases__text">Metagrowth Labs is a creative development agency specialize in designing and
+                    building high-performing websites and digital products that are not just beautiful — but functional,
+                    fast, and conversion-ready. Whether it's a startup portfolio, SaaS dashboard, or agency presence, we
+                    partner with clients to turn vision into code and clicks.</div>
+                </div>
+              </a>
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://unify-connect.vercel.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/unifyconnect.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">UnifyConnect</h4>
+                  <div class="cases__text">UnifyConnect is a real-time communication platform that combines high-quality
+                    video calling with AI-powered live captions and sign language translation. Utilizing a custom
+                    CNN-LSTM neural network with MediaPipe hand tracking, it translates sign language into text in real
+                    time with minimal latency and high accuracy.</div>
+                </div>
+              </a>
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://careconnect-io.vercel.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/cc.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">CareConnect</h4>
+                  <div class="cases__text">Designed a seamless UI for a healthcare management system using Next.js,
+                    Tailwind-CSS, TypeScript and ShadCn UI. The system manages bookings, access permissions, and an
+                    admin panel for scheduling or canceling appointments,with SMS notifications support.</div>
+                </div>
+              </a>
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://studentwallet.netlify.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/ce.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Crafted Earth</h4>
+                  <div class="cases__text">Built an elegant and vibrant website for Crafted Beauty, a brand celebrating
+                    handmade artistry. Focused on storytelling, visual appeal, and a smooth shopping experience.</div>
+                </div>
+              </a>
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://chefkithcen.netlify.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/chef.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Chef's Kitchen</h4>
+                  <div class="cases__text">Developed a platforms empowers you to explore new cuisines, perfect classic
+                    dishes, and build confidence in your cooking.</div>
+                </div>
+              </a>
+              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
+                href="https://studentwallet.netlify.app/">
+                <div class="cases__preview"><img class="cases__pic" src="img/sw.png" alt="">
+                  <div class="cases__box">Live <br>Website</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">StudentWallet</h4>
+                  <div class="cases__text">Developed StudentWallet a seamless UI for a Fee Payment App using HTML, CSS,
+                    JavaScript, Firebase. The app enables secure payments, transaction tracking, and an admin panel for
+                    managing student records, with real-time receipt generation support.</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="cases__figures">
+            <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="2" data-orientation="down"
+                src="img/figure-2.png" alt=""></div>
+            <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="1.8" data-orientation="down"
+                src="img/figure-3.png" alt=""></div>
+          </div>
+        </div>
+    </section>
+    <section id="review">
+      <div class="review">
+        <div class="review__center center">
+          <div class="review__stage stage" data-aos="animation-scale-y">What People Say</div>
+          <h2 class="review__title title h1" data-aos="animation-scale-y" data-aos-delay="200">Trusted by <br>Clients.
+          </h2>
+          <div class="review__container" data-aos="animation-translate-y" data-aos-delay="400">
+            <div class="review__slider owl-carousel js-slider-review">
+              <div class="review__item">
+                <div class="review__text">“ Collaborating with Nikhil was an absolute pleasure. His professionalism,
+                  promptness, and dedication to delivering exceptional results were evident throughout our project.
+                  Nikhil's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your
+                  website and elevate your brand, Nikhil is the ideal partner. ”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Anjali Piuaty</div>
+                    <div class="review__company">Director & CEO of OctaNet Services Pvt Ltd.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__text">“ Working with Nikhil was a fantastic experience. He's an excellent
+                  communicator who took the time to truly understand our vision and offered valuable insights throughout
+                  the process. His patient and collaborative approach made a complex project feel easy and enjoyable. I
+                  couldn't be happier with the result and the seamless partnership. ”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Ganesh Karale</div>
+                    <div class="review__company">CEO of Bluestock Fintech</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__text">“ The best part about working with Nikhil is his reliability and post-launch
+                  support. He ensured a smooth deployment and has been incredibly responsive to any questions or updates
+                  we've needed since. It's great to have a developer you can count on long-term. ”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Naresh Sindhu</div>
+                    <div class="review__company">Founder Of Tara Co.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__text">“ Beyond his technical skills, Nikhil has a keen eye for design and user
+                  experience. He provided invaluable suggestions that greatly improved the final product, making it not
+                  only functional but also beautiful and intuitive. He’s a developer who truly cares about the end-user.
+                  ”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Udit Sharma</div>
+                    <div class="review__company">Freelance Developer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review__bg">
+          <div class="review__preview"><img class="review__pic js-parallax" data-scale="1.5" data-orientation="down"
+              src="img/review-cube.png" alt=""></div>
+          <div class="review__preview"><img class="review__pic" src="img/review-cube.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <div class="wrapper wrapper_dark">
+      <div class="contacts" id="contact">
+        <div class="contacts__center center">
+          <div class="contacts__container">
+            <div class="contacts__wrap">
+              <div class="contacts__stage stage" data-aos="animation-scale-y">Say hello 👋</div>
+              <h2 class="contacts__title h1" data-aos="animation-scale-y" data-aos-delay="200">Let’s Work
+                <br>Together.
+              </h2>
+              <div class="contacts__info" data-aos="animation-scale-y" data-aos-delay="400">I’d love to meet up with
+                you to discuss your venture, and potential collaborations.</div>
+            </div>
+            <div class="contacts__row">
+              <div class="contacts__details" data-aos="animation-translate-y"><a class="contacts__line"
+                  href="mailto:hello@ui8.net">
+                  <div class="contacts__icon"><svg class="icon icon-email">
+                      <use xlink:href="img/sprite.svg#icon-email"></use>
+                    </svg></div>
+                  <div class="contacts__text">developer.nikk@gmail.com</div>
+                </a>
+                <div class="contacts__line">
+                  <div class="contacts__icon"><svg class="icon icon-place">
+                      <use xlink:href="img/sprite.svg#icon-place"></use>
+                    </svg></div>
+                  <div class="contacts__text">
+                    <p>Hisar</p>
+                    <p>Haryana, India</p>
+                  </div>
+                </div><a class="contacts__line" href="tel:+441236547890">
+                  <div class="contacts__icon"><svg class="icon icon-phone">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg></div>
+                  <div class="contacts__text">+91 8813060916</div>
+                </a>
+              </div>
+              <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contacts__form">
+
+                <input type="hidden" name="access_key" value="b1b4b1e2-faac-4c12-a054-e2a9de2286ec">
+
+                <div class="contacts__field field">
+                  <input class="field__input" type="text" name="name" placeholder="Name" required />
+                </div>
+
+                <div class="contacts__field field">
+                  <input class="field__input" type="email" name="email" placeholder="Email" required />
+                </div>
+
+                <div class="contacts__field field">
+                  <select class="field__select" name="question" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option>Frontend Development</option>
+                    <option>Android Development</option>
+                    <option>API Integration</option>
+                    <option>UI/UX Development</option>
+                  </select>
+                </div>
+
+                <div class="contacts__field field">
+                  <textarea class="field__textarea" name="message" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="contacts__btn" style="position: relative;">
+                  <button id="submitBtn" class="btn btn_purple" type="submit">
+                    <span class="btn__text">Let’s Talk</span>
+                    <span class="btn__loader" style="display: none;"></span>
+                  </button>
+                </div>
+              </form>
+
+            </div>
+            <div id="toast" class="toast"></div>
+            <div class="contacts__category h5">Let’s connect</div>
+            <div class="contacts__social">
+              <div class="contacts__box" data-aos="animation-translate-y">
+                <a class="contacts__link" href="https://www.linkedin.com/in/nikhilsiwan/">
+                  <i class="bi bi-linkedin"></i>
+                  <div class="contacts__text">LinkedIn</div>
+                </a>
+              </div>
+              <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="150">
+                <a class="contacts__link" href="mailto:developer.nikk@gmail.com">
+                  <i class="bi bi-envelope-fill"></i>
+                  <div class="contacts__text">Gmail</div>
+                </a>
+              </div>
+              <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="300">
+                <a class="contacts__link" href="https://www.instagram.com/_thisisnikkk_/">
+                  <i class="bi bi-instagram"></i>
+                  <div class="contacts__text">Instagram</div>
+                </a>
+              </div>
+              <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="450">
+                <a class="contacts__link" href="tel:+918813060916">
+                  <i class="bi bi-telephone-fill"></i>
+                  <div class="contacts__text">+91-8813060916</div>
+                </a>
+              </div>
+            </div>
+            <div class="figures">
+              <div class="figures__preview"><img class="figures__pic" src="img/figures-1.png" alt="" /></div>
+              <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.6" data-orientation="up"
+                  src="img/figures-2.png" alt="" /></div>
+              <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.3" data-orientation="up"
+                  src="img/figures-3.png" alt="" /></div>
+              <div class="figures__preview"><img class="figures__pic" src="img/figures-4.png" alt="" /></div>
+              <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2.3"
+                  data-orientation="down" src="img/figures-5.png" alt="" /></div>
+              <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2" data-orientation="up"
+                  src="img/figures-6.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__center center">
+          <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic"
+                src="img/logo-empty.svg" alt="" /></a>
+            <div class="footer__wrap">
+              <div class="footer__title h1">You only have one chance to make a first impression.</div>
+              <div class="footer__info h4">Let’s make it an amazing one.</div>
+            </div>
+            <div class="footer__menu">
+              <a class="footer__link js-scroll" href="#details">About Me</a>
+              <a class="footer__link js-scroll" href="#portfolio">Portfolio</a>
+              <a class="footer__link js-scroll" href="#contact">Contact</a>
+              <a class="footer__link js-scroll" href="https://github.com/ThisisNikkk">Github</a>
+              <a class="footer__link js-scroll" href="https://www.instagram.com/_thisisnikkk_/">Instagram</a>
+              <a class="footer__link js-scroll" href="https://www.linkedin.com/in/nikhilsiwan/">LinkedIn</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2025, Nikhil Siwan</div>
+            <a class="footer__scroll js-scroll" href="#header">Back to top</a>
+          </div>
+        </div>
+        <div class="footer__bg">
+          <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.5" data-orientation="down"
+              src="img/footer-cube-1.png" alt="" /></div>
+          <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.8" data-orientation="up"
+              src="img/footer-cube-1.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
