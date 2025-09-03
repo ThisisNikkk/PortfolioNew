@@ -3,6 +3,6 @@
 
     <rect x="148" y="20.58" width="3.54" height="3.42" fill="#FF6800"/>
 
-    <rect x="18" width="32" height="16" transform="rotate(90 16 0)" fill="#FFBDBD"/>
-    <circle cx="32" cy="16" r="16" fill="#4C40F7"/>
+    <rect x="18" width="32" height="16" transform="rotate(90 16 0)" fill="#4C40F7"/>
+    <circle cx="32" cy="16" r="16" fill="#f77116"/>
 </svg>
