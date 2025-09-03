@@ -3833,7 +3833,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
 
 .review .owl-stage-outer {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   overflow: visible;
 }
 
@@ -3857,7 +3857,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 24px;
+  bottom: -45px;
   z-index: 3;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -6315,7 +6315,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
   }
 
   .review__item {
-    padding: 40px 38px 60px;
+    padding: 25px 25px 25px;
     text-align: center;
   }
 
@@ -6333,7 +6333,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
   }
 
   .review__text {
-    margin-bottom: 35px;
+    margin-bottom: 12px;
   }
 
   .review__author {
@@ -6362,6 +6362,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
 
   .contacts {
     margin-bottom: 57px;
+    padding-top: 30px;
   }
 
   .contacts__container {
