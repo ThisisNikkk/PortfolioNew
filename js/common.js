@@ -140,7 +140,7 @@ $(document).ready(function () {
             var _this = $(this),
                 itemsMobileAlbum = _this.data('items-mobile-album'),
                 itemsMobilePortrait = _this.data('items-mobile-portrait');
-            console.log(itemsMobileAlbum);
+            // console.log(itemsMobileAlbum);
             if (itemsMobileAlbum && itemsMobilePortrait) {
                 owlMobileAlbum(_this, itemsMobileAlbum, itemsMobilePortrait);
                 $(window).resize(function () {
