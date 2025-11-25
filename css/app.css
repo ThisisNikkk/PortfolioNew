@@ -170,6 +170,13 @@ table {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 *,
