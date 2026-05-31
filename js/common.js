@@ -70,7 +70,7 @@ $(document).ready(function () {
                 items: 2
             },
             1024: {
-                items: 3
+                items: 2
             }
         }
     });
