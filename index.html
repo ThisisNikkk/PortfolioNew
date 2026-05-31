@@ -34,25 +34,65 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nikhilsiwan.vercel.app">
   <meta property="og:site_name" content="Nikhil Siwan">
-  <meta property="og:image" content="https://nikhilsiwan.vercel.app/img/og-preview.png"> <!-- IMPORTANT: Update this image path! -->
+  <meta property="og:image" content="https://nikhilsiwan.vercel.app/img/fb-og-image.png">
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nikhil Siwan | Web Developer Portfolio">
   <meta name="twitter:description" content="A skilled web developer from Haryana, India, creating modern, responsive, and user-friendly websites.">
-  <meta name="twitter:image" content="https://nikhilsiwan.vercel.app/img/og-preview.png"> <!-- IMPORTANT: Update this image path! -->
+  <meta name="twitter:image" content="https://nikhilsiwan.vercel.app/img/twitter-card.png">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" media="all" href="css/app.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+  <!-- Preload critical above-the-fold image (LCP) -->
+  <link rel="preload" as="image" href="img/bg-main.jpg">
+
+  <!-- JSON-LD Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikhil Siwan",
+    "jobTitle": "Software Developer",
+    "url": "https://nikhilsiwan.vercel.app",
+    "sameAs": [
+      "https://www.linkedin.com/in/nikhilsiwan/",
+      "https://www.instagram.com/_thisisnikkk_/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hisar",
+      "addressRegion": "Haryana",
+      "addressCountry": "India"
+    },
+    "email": "developer.nikk@gmail.com",
+    "telephone": "+918813060916"
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect and Load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Critical Stylesheet (local, minified) -->
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+
+  <!-- Non-render-blocking CDN stylesheets (loaded async, no paint delay) -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"></noscript>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"></noscript>
 </head>
 
 <body>
   <div class="page">
-    <div class="main">
-      <div class="header js-header" id="header">
+    <main class="main">
+      <header class="header js-header" id="header">
         <div class="header__center center"><a class="header__logo" href="index.html"><img class="header__pic"
-              src="img/logo.svg" alt="" /></a>
+              src="img/logo.svg" alt="Decorative image" /></a>
           <div class="header__social header__social_main">
             <a class="header__link" href="https://www.linkedin.com/in/nikhilsiwan/">
               <i class="bi bi-linkedin"></i> LinkedIn
@@ -61,12 +101,12 @@
               <i class="bi bi-instagram"></i> Instagram
             </a>
           </div>
-          <button class="header__burger js-header-burger"></button>
+          <button class="header__burger js-header-burger" aria-label="Toggle navigation menu"></button>
         </div>
         <div class="header__wrapper js-header-wrapper">
           <div class="header__preview"><a class="header__logo" href="index.html"><img class="header__pic"
-                src="img/logo-white.svg" alt="" /></a>
-            <div class="header__img"><img class="header__pic" src="img/bg-header.png" alt="" /></div>
+                src="img/logo-white.svg" alt="Decorative image" /></a>
+            <div class="header__img"><img class="header__pic" src="img/bg-header.png" alt="Decorative image" /></div>
           </div>
           <div class="header__center center">
             <div class="header__contacts"><a class="header__line" href="mailto:hello@ui8.net">
@@ -123,9 +163,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
       <section id="about">
-        <div class="main__bg"><img class="main__pic" src="img/bg-main.jpg" alt=""></div>
+        <div class="main__bg"><img class="main__pic" src="img/bg-main.jpg" alt="Decorative image" fetchpriority="high"></div>
         <div class="main__center center" id="about">
           <div class="main__wrap">
             <div class="main__stage stage" data-aos="transform">Nikhil Siwan</div>
@@ -134,31 +174,31 @@
                 data-aos-delay="450">I'm a Software</span><span data-aos="transform"
                 data-aos-delay="600">Developer.</span></h1><a class="scroll js-scroll" href="#details"
               data-aos="transform">
-              <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
+              <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt="Decorative image"></div>
               <div class="scroll__text">Scroll down</div>
             </a>
           </div>
         </div>
         <div class="main__view" data-aos>
-          <div class="main__preview"><img class="main__pic" src="img/main-pic-6.png" alt=""></div>
+          <div class="main__preview"><img class="main__pic" src="img/main-pic-6.png" alt="3D Geometric Object"></div>
           <div class="main__preview"><img class="main__pic js-parallax" data-scale="2.5" data-orientation="up"
-              src="img/main-pic-1.png" alt=""></div>
+              src="img/main-pic-1.png" alt="Decorative image"></div>
           <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="up"
-              src="img/main-pic-2.png" alt=""></div>
-          <div class="main__preview"><img class="main__pic" src="img/main-pic-3.png" alt=""></div>
-          <div class="main__preview"><img class="main__pic" src="img/main-pic-4.png" alt=""></div>
+              src="img/main-pic-2.png" alt="Decorative image"></div>
+          <div class="main__preview"><img class="main__pic" src="img/main-pic-3.png" alt="3D Cube"></div>
+          <div class="main__preview"><img class="main__pic" src="img/main-pic-4.png" alt="3D Cone"></div>
           <div class="main__preview"><img class="main__pic js-parallax" data-scale="4.5" data-orientation="up"
-              src="img/main-pic-5.png" alt=""></div>
+              src="img/main-pic-5.png" alt="Decorative image"></div>
           <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="down"
-              src="img/main-pic-7.png" alt=""></div>
+              src="img/main-pic-7.png" alt="Decorative image"></div>
         </div>
         <div class="main__figures">
           <div class="main__figure" data-aos="animation-translate-y"><img class="main__pic js-parallax" data-scale="2.2"
-              data-orientation="down" src="img/figure-1.png" alt=""></div>
+              data-orientation="down" src="img/figure-1.png" alt="Decorative image"></div>
           <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="200"><img
-              class="main__pic js-parallax" data-scale="2.2" data-orientation="up" src="img/figure-2.png" alt=""></div>
+              class="main__pic js-parallax" data-scale="2.2" data-orientation="up" src="img/figure-2.png" alt="Decorative image"></div>
           <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="400"><img class="main__pic"
-              src="img/figure-3.png" alt=""></div>
+              src="img/figure-3.png" alt="Decorative image"></div>
         </div>
     </div>
     </section>
@@ -182,7 +222,7 @@
             <div class="details__slider owl-carousel js-slider-details">
               <div class="details__item">
                 <div class="details__preview details__preview_cursor" data-aos="animation-scale">
-                  <div class="details__img"><img class="details__pic" src="img/fd.png" alt=""></div>
+                  <div class="details__img"><img class="details__pic" src="img/fd.png" alt="Frontend Development" loading="lazy"></div>
                 </div>
                 <h5 class="details__category h5" data-aos="animation-scale-y">Frontend <br>Development</h5>
                 <div class="details__text" data-aos="animation-scale-y">Building responsive and high-performance web
@@ -194,7 +234,7 @@
 
               <div class="details__item">
                 <div class="details__preview details__preview_hand" data-aos="animation-scale" data-aos-delay="300">
-                  <div class="details__img"><img class="details__pic" src="img/ui.png" alt=""></div>
+                  <div class="details__img"><img class="details__pic" src="img/ui.png" alt="UI/UX Development" loading="lazy"></div>
                 </div>
                 <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="300">UI/UX <br>Development
                 </h5>
@@ -207,7 +247,7 @@
 
               <div class="details__item">
                 <div class="details__preview details__preview_cursor" data-aos="animation-scale" data-aos-delay="150">
-                  <div class="details__img"><img class="details__pic" src="img/ad.png" alt=""></div>
+                  <div class="details__img"><img class="details__pic" src="img/ad.png" alt="Android Development" loading="lazy"></div>
                 </div>
                 <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="150">Android
                   <br>Development
@@ -222,7 +262,7 @@
 
               <div class="details__item">
                 <div class="details__preview details__preview_hand">
-                  <div class="details__img"><img class="details__pic" src="img/bd.png" alt=""></div>
+                  <div class="details__img"><img class="details__pic" src="img/bd.png" alt="Backend Development" loading="lazy"></div>
                 </div>
                 <h5 class="details__category h5">Backend <br>Development</h5>
                 <div class="details__text">Developing secure and scalable server-side applications, APIs, and database
@@ -234,7 +274,7 @@
 
               <div class="details__item">
                 <div class="details__preview details__preview_cursor">
-                  <div class="details__img"><img class="details__pic" src="img/ss.png" alt=""></div>
+                  <div class="details__img"><img class="details__pic" src="img/ss.png" alt="Scalable Solutions" loading="lazy"></div>
                 </div>
                 <h5 class="details__category h5">Scalable <br>Solutions</h5>
                 <div class="details__text">
@@ -248,7 +288,7 @@
 
               <div class="details__item">
                 <div class="details__preview details__preview_hand">
-                  <div class="details__img"><img class="details__pic" src="img/api.png" alt=""></div>
+                  <div class="details__img"><img class="details__pic" src="img/api.png" alt="API Integration" loading="lazy"></div>
                 </div>
                 <h5 class="details__category h5">API <br>Integration</h5>
                 <div class="details__text">Integrating third-party APIs and services to extend application functionality
@@ -262,11 +302,11 @@
         </div>
         <div class="details__figures">
           <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="down"
-              src="img/figure-1.png" alt=""></div>
+              src="img/figure-1.png" alt="Decorative image" loading="lazy"></div>
           <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="up"
-              src="img/figure-2.png" alt=""></div>
+              src="img/figure-2.png" alt="Decorative image" loading="lazy"></div>
           <div class="details__figure"><img class="details__pic js-parallax" data-scale="1.2" data-orientation="up"
-              src="img/figure-3.png" alt=""></div>
+              src="img/figure-3.png" alt="Decorative image" loading="lazy"></div>
         </div>
     </section>
     <section id="work">
@@ -281,27 +321,27 @@
               - clean, responsive code to build seamless and engaging user experiences.
             </div>
             <a class="scroll js-scroll" data-aos="animation-scale-y" href="#cases">
-              <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
+              <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt="Decorative image" loading="lazy"></div>
               <div class="scroll__text">Scroll down</div>
             </a>
           </div>
         </div>
         <div class="work__preview"><img class="work__pic js-parallax" data-scale="2" data-orientation="down"
-            src="img/work-cube.png" alt=""></div>
+            src="img/work-cube.png" alt="Decorative image" loading="lazy"></div>
         <div class="work__figures" data-aos>
           <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up"
-              src="img/work-cube-1.png" alt=""></div>
+              src="img/work-cube-1.png" alt="Decorative image" loading="lazy"></div>
           <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.5" data-orientation="up left"
-              src="img/work-cube-2.png" alt=""></div>
+              src="img/work-cube-2.png" alt="Decorative image" loading="lazy"></div>
           <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up right"
-              src="img/work-cube-3.png" alt=""></div>
-          <div class="work__figure"><img class="work__pic" src="img/work-cube-4.png" alt=""></div>
+              src="img/work-cube-3.png" alt="Decorative image" loading="lazy"></div>
+          <div class="work__figure"><img class="work__pic" src="img/work-cube-4.png" alt="3D Work Cube 4" loading="lazy"></div>
           <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.1" data-orientation="left"
-              src="img/work-cube-5.png" alt=""></div>
+              src="img/work-cube-5.png" alt="Decorative image" loading="lazy"></div>
           <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="right"
-              src="img/work-cube-6.png" alt=""></div>
+              src="img/work-cube-6.png" alt="Decorative image" loading="lazy"></div>
           <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="down"
-              src="img/work-cube-7.png" alt=""></div>
+              src="img/work-cube-7.png" alt="Decorative image" loading="lazy"></div>
         </div>
       </div>
     </section>
@@ -315,7 +355,7 @@
               <div class="cases__slider owl-carousel js-slider-cases">
               <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
                 href="https://crafted-beauty.vercel.app/">
-                <div class="cases__preview"><img class="cases__pic" src="img/CER.png" alt="">
+                <div class="cases__preview"><img class="cases__pic" src="img/CER.png" alt="Crafted Earth Project Screenshot" loading="lazy">
                   <div class="cases__box">Live <br>Website</div>
                 </div>
                 <div class="cases__body">
@@ -326,7 +366,7 @@
               </a>
               <a class="cases__item" data-aos="animation-translate-y" data-aos-delay=""
                 href="https://chefkithcen.netlify.app/">
-                <div class="cases__preview"><img class="cases__pic" src="img/chef.png" alt="">
+                <div class="cases__preview"><img class="cases__pic" src="img/chef.png" alt="Chef's Kitchen Project Screenshot" loading="lazy">
                   <div class="cases__box">Live <br>Website</div>
                 </div>
                 <div class="cases__body">
@@ -339,9 +379,9 @@
           </div>
           <div class="cases__figures">
             <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="2" data-orientation="down"
-                src="img/figure-2.png" alt=""></div>
+                src="img/figure-2.png" alt="Decorative image" loading="lazy"></div>
             <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="1.8" data-orientation="down"
-                src="img/figure-3.png" alt=""></div>
+                src="img/figure-3.png" alt="Decorative image" loading="lazy"></div>
           </div>
         </div>
     </section>
@@ -359,7 +399,7 @@
                   Nikhil's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your
                   website and elevate your brand, Nikhil is the ideal partner. ”</div>
                 <div class="review__author">
-                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt="Client Avatar" loading="lazy"></div>
                   <div class="review__details">
                     <div class="review__man h5">Anjali Piuaty</div>
                     <div class="review__company">Director & CEO of OctaNet Services Pvt Ltd.</div>
@@ -372,7 +412,7 @@
                   the process. His patient and collaborative approach made a complex project feel easy and enjoyable. I
                   couldn't be happier with the result and the seamless partnership. ”</div>
                 <div class="review__author">
-                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt="Client Avatar" loading="lazy"></div>
                   <div class="review__details">
                     <div class="review__man h5">Ganesh Karale</div>
                     <div class="review__company">CEO of Bluestock Fintech</div>
@@ -384,7 +424,7 @@
                   support. He ensured a smooth deployment and has been incredibly responsive to any questions or updates
                   we've needed since. It's great to have a developer you can count on long-term. ”</div>
                 <div class="review__author">
-                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt="Client Avatar" loading="lazy"></div>
                   <div class="review__details">
                     <div class="review__man h5">Naresh Sindhu</div>
                     <div class="review__company">Founder Of Tara Co.</div>
@@ -397,7 +437,7 @@
                   only functional but also beautiful and intuitive. He’s a developer who truly cares about the end-user.
                   ”</div>
                 <div class="review__author">
-                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                  <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt="Client Avatar" loading="lazy"></div>
                   <div class="review__details">
                     <div class="review__man h5">Udit Sharma</div>
                     <div class="review__company">Freelance Developer</div>
@@ -409,8 +449,8 @@
         </div>
         <div class="review__bg">
           <div class="review__preview"><img class="review__pic js-parallax" data-scale="1.5" data-orientation="down"
-              src="img/review-cube.png" alt=""></div>
-          <div class="review__preview"><img class="review__pic" src="img/review-cube.png" alt=""></div>
+              src="img/review-cube.png" alt="Decorative image" loading="lazy"></div>
+          <div class="review__preview"><img class="review__pic" src="img/review-cube.png" alt="Review 3D Cube 2" loading="lazy"></div>
         </div>
       </div>
     </section>
@@ -454,15 +494,15 @@
                 <input type="hidden" name="access_key" value="b1b4b1e2-faac-4c12-a054-e2a9de2286ec">
 
                 <div class="contacts__field field">
-                  <input class="field__input" type="text" name="name" placeholder="Name" required />
+                  <input class="field__input" type="text" name="name" placeholder="Name" aria-label="Name" required />
                 </div>
 
                 <div class="contacts__field field">
-                  <input class="field__input" type="email" name="email" placeholder="Email" required />
+                  <input class="field__input" type="email" name="email" placeholder="Email" aria-label="Email" required />
                 </div>
 
                 <div class="contacts__field field">
-                  <select class="field__select" name="service" type="service" required>
+                  <select class="field__select" name="service" aria-label="Service" required>
                     <option value="" disabled selected>Select Service</option>
                     <option>Frontend Development</option>
                     <option>Android Development</option>
@@ -472,7 +512,7 @@
                 </div>
 
                 <div class="contacts__field field">
-                  <textarea class="field__textarea" name="message" placeholder="Message" required></textarea>
+                  <textarea class="field__textarea" name="message" placeholder="Message" aria-label="Message" required></textarea>
                 </div>
 
                 <div class="contacts__btn" style="position: relative;">
@@ -513,24 +553,24 @@
               </div>
             </div>
             <div class="figures">
-              <div class="figures__preview"><img class="figures__pic" src="img/figures-1.png" alt="" /></div>
+              <div class="figures__preview"><img class="figures__pic" src="img/figures-1.png" alt="Contact 3D Element 1" loading="lazy" /></div>
               <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.6" data-orientation="up"
-                  src="img/figures-2.png" alt="" /></div>
+                  src="img/figures-2.png" alt="Decorative image"  loading="lazy" /></div>
               <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.3" data-orientation="up"
-                  src="img/figures-3.png" alt="" /></div>
-              <div class="figures__preview"><img class="figures__pic" src="img/figures-4.png" alt="" /></div>
+                  src="img/figures-3.png" alt="Decorative image"  loading="lazy" /></div>
+              <div class="figures__preview"><img class="figures__pic" src="img/figures-4.png" alt="Contact 3D Element 4" loading="lazy" /></div>
               <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2.3"
-                  data-orientation="down" src="img/figures-5.png" alt="" /></div>
+                  data-orientation="down" src="img/figures-5.png" alt="Decorative image"  loading="lazy" /></div>
               <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2" data-orientation="up"
-                  src="img/figures-6.png" alt="" /></div>
+                  src="img/figures-6.png" alt="Decorative image"  loading="lazy" /></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer">
+      <footer class="footer">
         <div class="footer__center center">
           <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic"
-                src="img/logo-empty.svg" alt="" /></a>
+                src="img/logo-empty.svg" alt="Decorative image" /></a>
             <div class="footer__wrap">
               <div class="footer__title h1">You only have one chance to make a first impression.</div>
               <div class="footer__info h4">Let’s make it an amazing one.</div>
@@ -551,19 +591,20 @@
         </div>
         <div class="footer__bg">
           <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.5" data-orientation="down"
-              src="img/footer-cube-1.png" alt="" /></div>
+              src="img/footer-cube-1.png" alt="Footer 3D cube decoration" loading="lazy" /></div>
           <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.8" data-orientation="up"
-              src="img/footer-cube-1.png" alt="" /></div>
+              src="img/footer-cube-1.png" alt="Footer 3D cube decoration" loading="lazy" /></div>
         </div>
-      </div>
+      </footer>
     </div>
-  </div>
+  </main>
   <div class="cursor"></div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/common.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/app.min.js" defer></script>
+  <script src="js/common.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="js/form.js" defer></script>
 </body>
 
 </html>
